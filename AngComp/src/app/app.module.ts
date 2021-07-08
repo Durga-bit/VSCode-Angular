@@ -27,6 +27,10 @@ import {TechRoutingModule} from './tech-routing/tech-routing.module';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { ModelDrivenComponent } from './model-driven/model-driven.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { Employee1Component } from './employee1/employee1.component';
+import { Employee2Component } from './employee2/employee2.component';
+import { CustomSearchPipe } from './pipes/custom-search.pipe';
+import { ColorDirectiveDirective } from './color-directive.directive';
 
 
 @NgModule({
@@ -52,6 +56,10 @@ import {ReactiveFormsModule} from '@angular/forms';
     CoursesearchPipe,
     TemplateDrivenComponent,
     ModelDrivenComponent,
+    Employee1Component,
+    Employee2Component,
+    CustomSearchPipe,
+    ColorDirectiveDirective,
 
     
 
