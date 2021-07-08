@@ -26,6 +26,7 @@ import { CoursesearchPipe } from './pipes/coursesearch.pipe';
 import {TechRoutingModule} from './tech-routing/tech-routing.module';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { ModelDrivenComponent } from './model-driven/model-driven.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -56,7 +57,7 @@ import { ModelDrivenComponent } from './model-driven/model-driven.component';
 
   ],
   imports: [
-    BrowserModule,FormsModule,  HttpClientModule,Ng2SearchPipeModule,TechRoutingModule
+    BrowserModule,FormsModule,  HttpClientModule,Ng2SearchPipeModule,TechRoutingModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
