@@ -1,0 +1,50 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<br>
+<div style='margin:90px;border:2px solid lightcoral' class='container'>
+    <h1 style='color:green;margin-left:450px'>PRODUCTS</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th style='color:blue'scope="col"><svg style='float:left;margin:9px' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg><input style='margin:10px;float:left;color:blue;width:150px'type="text" class="form-control" placeholder="Search Here" [(ngModel)]="term">
+                    </th>
+            <th style='color:blueviolet'scope="col">SortBy
+                <select  style='width:150px;height:40px;margin:10px' value="Sort" [(ngModel)]='sortby'> 
+                    <option [value]='1'>A-Z</option>
+                    <option [value]='2'>Low-High</option>
+                </select>
+            </th>
+
+            </thead>
+    <tbody>
+</tbody>    
+</table>
+
+    <table class="table table-hover">
+        <thead>
+            <tr class="table-primary">
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Image</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-success" *ngFor="let item of products |sort:sortby |filter:term">
+                <td >{{item.productId}}</td>
+                <td>{{item.productName}}</td>
+                <td>{{item.productPrice}}</td>
+                <td>{{item.productDes}}</td>
+                <td><img style='width:66px;height:60px'[src]='item.productImg'></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,10 @@
+<h2>struct-directives works!</h2><hr>
+<div [ngSwitch]='course'>
+    <div *ngSwitchCase="'java'">Java course selected</div>
+    <div *ngSwitchCase="'angular'"> Angular course selected</div>
+    <div *ngSwitchDefault>Php course selected</div>
+    <ul *ngFor='let employee of employees'>
+        <li>{{employee.empId}} {{employee.empName}}</li>
+    </ul>
+</div>
+

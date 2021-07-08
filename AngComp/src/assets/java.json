@@ -1,0 +1,6 @@
+[
+    {"courseId":101, "courseName":"Java","coursePrice":5000,"courseDescrption":"Java Training","courseImg":"assets/images/corejava.jpg"},
+    {"courseId":102, "courseName":"Collections","coursePrice":2000,"courseDescrption":"Collections Training","courseImg":"assets/images/spring.png"},
+    {"courseId":103, "courseName":"Spring","coursePrice":4000,"courseDescrption":"Spring Training","courseImg":"assets/images/springboot.png"},
+    {"courseId":104, "courseName":"Core Java","coursePrice":6000,"courseDescrption":"Core Java Training","courseImg":"assets/images/micro.jpg"}
+]

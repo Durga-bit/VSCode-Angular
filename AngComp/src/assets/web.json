@@ -1,0 +1,6 @@
+[
+    {"courseId":105, "courseName":"HTML","coursePrice":3000,"courseDescrption":"HTML Training ","courseImg":"assets/images/html.png"},
+    {"courseId":106, "courseName":"CSS","coursePrice":4000,"courseDescrption":"CSS Training ","courseImg":"assets/images/css.png"},
+    {"courseId":107, "courseName":"java script","coursePrice":9000,"courseDescrption":"Java Script Training","courseImg":"assets/images/js.png"},
+    {"courseId":108, "courseName":"angular","coursePrice":20000,"courseDescrption":"Angular Training","courseImg":"assets/images/angular.jpg"}
+]

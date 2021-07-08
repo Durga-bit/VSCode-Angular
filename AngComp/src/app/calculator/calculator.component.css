@@ -1,0 +1,13 @@
+#body{
+    margin:auto;
+    border:1px solid black;
+    width:max-content;
+    height:max-content;
+    padding:10px;
+    background-color:lightsalmon;
+}
+div{
+    margin:10px;
+    padding:20px;
+    background-color:lightgreen;
+}

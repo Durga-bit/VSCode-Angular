@@ -1,0 +1,7 @@
+[
+
+    {"productId":101, "productName":"Mobile","productPrice":3000,"productDes":"the product is Mobile","productImg":"assets/th (1).jpg"},
+    {"productId":102, "productName":"Tv","productPrice":50000,"productDes":"the product is TV" ,"productImg":"assets/th.jpg"},
+    {"productId":103, "productName":"Laptop","productPrice":500,"productDes":"the product is Laptop ","productImg":"assets/th (2).jpg"},
+    {"productId":104, "productName":"T-shirt","productPrice":100000,"productDes":"the product is T-shirt","productImg":"assets/th (3).jpg"}
+]
